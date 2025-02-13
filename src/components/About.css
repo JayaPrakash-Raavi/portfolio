@@ -1,0 +1,163 @@
+/* About Section */
+.about-section {
+  background-color: #f8f9fa;
+  /* color: #444; */
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* About Container */
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Text Content */
+.about-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+/* Title with Glow Effect */
+.about-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 167, 38, 0.8);
+  color: #ff914d;
+  animation: pulseGlow 1.8s infinite alternate ease-in-out;
+}
+
+/* Summary Text */
+.summary {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.summary:hover {
+  transform: scale(1.02);
+}
+
+/* SVG Image */
+.about-svg {
+  flex: 1;
+  text-align: center;
+  min-width: 320px;
+  animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* SVG Animation */
+.svg-animation {
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.svg-animation:hover {
+  transform: rotate(10deg) scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Animated Circles (Data Flow) */
+.circle1 {
+  animation: moveUpDown 1.5s infinite alternate ease-in-out;
+}
+
+.circle2 {
+  animation: moveUpDown 2s infinite alternate ease-in-out;
+}
+
+.circle3 {
+  animation: moveUpDown 2.5s infinite alternate ease-in-out;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #ff914d;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseGlow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 167, 38, 0.8);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 94, 0, 1);
+  }
+}
+
+@keyframes moveUpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .summary {
+    font-size: 1rem;
+  }
+}

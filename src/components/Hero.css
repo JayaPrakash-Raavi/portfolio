@@ -1,0 +1,25 @@
+.hero {
+    text-align: center;
+    padding: 100px 10%;
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .hero h1, .hero p, .hero .button {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
