@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import About from "./About";
+import Experience from "./Experience";
 
 function Home() {
   return (
@@ -39,6 +40,7 @@ function Home() {
 
 
    <About />
+<Experience />
 
     </div>
   );
