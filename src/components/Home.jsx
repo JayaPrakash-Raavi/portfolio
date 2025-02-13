@@ -29,7 +29,7 @@ function Home() {
         </div>
         <div className="image-content">
           <img
-            src="/image.jpg"
+            src="/profile.jpg"
             alt="Jaya Prakash Raavi"
             className="profile-image"
           />

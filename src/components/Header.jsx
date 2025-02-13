@@ -38,7 +38,7 @@ function Header() {
           <button className="close-btn" onClick={() => setMenuOpen(false)}>
             <FaTimes />
           </button>
-          <img src="/image.jpg" alt="Jaya Prakash Raavi" className="profile-pic" />
+          <img src="/profile.jpg" alt="Jaya Prakash Raavi" className="profile-pic" />
           <h3>Jaya Prakash Raavi</h3>
         </div>
 
