@@ -1,26 +1,24 @@
-
-
 /* Home Section */
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: 100vw;
-    background: white;
-   
-  }
-  
-  /* Main Container */
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    max-width: 1200px;
-    margin: 0 0;
-  }
-  /* Buttons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  background: white;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 0;
+}
+
+/* Buttons */
 .buttons {
   display: flex;
   gap: 15px;
@@ -33,7 +31,6 @@
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 1rem;
-  /* width: 180px; */
   text-align: center;
 }
 
@@ -60,182 +57,158 @@
   background-color: #1e7e34;
   box-shadow: 0px 6px 15px rgba(40, 167, 69, 0.8);
 }
-  /* Left Image Content */
-  .image-content {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    animation: fadeInLeft 1.5s ease-in-out;
+
+/* Left Image Content */
+.image-content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  margin-left: 15%;
+}
+
+/* Right Text Content */
+.text-content {
+  width: 80%;
+  padding-left: 40px;
+  animation: fadeInRight 1.5s ease-in-out;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.gradient-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff8c00, #ff3b6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: gradientMove 3s linear infinite alternate;
+}
+
+/* Optional Animation for Gradient Shift */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
   }
-  
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.summary {
+  font-size: 1.1rem;
+  color: #858687;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  text-align: left;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.location, .date {
+  font-size: 1rem;
+  color: #777;
+  font-weight: bold;
+}
+
+/* Fade-In Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 🔹 Small Screen Adjustments */
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .image-content {
+    width: 100%;
+    margin-bottom: -60px;
+  }
+
   .profile-image {
     width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-    margin-left: 15%;
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, opacity 0.3s;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Hover Animation: Smooth Scale, Shadow Pulsation, and Lift */
-.profile-image:hover {
-    transform: scale(1.08) translateY(-8px);
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.75);
-    opacity: 0.95;
-}
-
-/* Keyframe for Initial Fade-in Effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Add Subtle Breathing Effect */
-@keyframes breathingEffect {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-    100% { transform: scale(1); }
-}
-
-/* Apply Breathing Effect on Hover */
-.profile-image:hover {
-    animation: breathingEffect 1.5s infinite alternate ease-in-out;
-}
-
-  /* Right Text Content */
-  .text-content {
-    width: 80%;
-    padding-left: 40px;
-    animation: fadeInRight 1.5s ease-in-out;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 10px;
-  }
-  
-  .gradient-text {
-    font-size: 1.4rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #ff8c00, #ff3b6a);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    animation: gradientMove 3s linear infinite alternate;
-  }
-  
-  /* Optional Animation for Gradient Shift */
-  @keyframes gradientMove {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
-  
-  
-  .summary {
-    font-size: 1.1rem;
-    color: #858687;
-    margin-bottom: 15px;
-    line-height: 1.8;
-    text-align: left;
-  
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .location, .date {
-    font-size: 1rem;
-    color: #777;
-    font-weight: bold;
-  }
-  
-  /* Fade-In Animations */
-  @keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  /* 🔹 Small Screen Adjustments */
-  @media (max-width: 768px) {
-  .home{
-    height:auto;
-  }
-    .container {
-      flex-direction: column-reverse;
-      text-align: center;
-      margin-top: 50px;
-      width: 100%;
-    }
-  
-    .image-content {
-      width: 100%;
-      margin-bottom: -60px;
-    }
-  
-    .profile-image {
-      width: 100%;
-      max-width: 300px;
-    /* margin-top: 300px; */
+    max-width: 300px;
     margin-left: 0;
-
-    }
-  
-    .text-content {
-      width: 100%;
-      padding: 50px 15px;
-      box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
-    }
-  
-    .title {
-      font-size: 2rem;
-    }
-  
-    .description {
-      font-size: 1.1rem;
-    }
-  
-    .summary {
-      font-size: 0.95rem;
-    }
-  
-    .location, .date {
-      font-size: 0.9rem;
-    }
   }
-  
-  
-  
-  
+
+  .text-content {
+    width: 100%;
+    padding: 50px 15px;
+    box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .summary {
+    font-size: 0.95rem;
+  }
+
+  .location, .date {
+    font-size: 0.9rem;
+  }
+}
+
+/* 🔹 Large Screen Adjustments */
+@media (min-width: 1200px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .gradient-text {
+    font-size: 1.6rem;
+  }
+
+  .summary {
+    font-size: 1.8rem;
+  }
+}

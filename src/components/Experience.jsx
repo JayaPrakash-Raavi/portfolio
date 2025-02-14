@@ -10,7 +10,7 @@ const experiences = [
     responsibilities: [
       "Providing support and guidance to students, clarifying complex concepts, and resolving doubts related to Data Mining methodologies and techniques.",
       "Taught Data Mining techniques, guiding students in using Python and SQL for large datasets.",
-      "Contributing Rubrics for grading assignments and exams, ensuring fair and consistent evaluation throughout the course.",
+      "Contributed rubrics for grading assignments and exams, ensuring fair and consistent evaluation throughout the course.",
     ],
     skills: ["Data Mining", "Python", "SQL", "+9 more"],
     logo: "/uofm-logo.png",
@@ -26,9 +26,9 @@ const experiences = [
       "Created interactive dashboards and visualizations using Power BI and Tableau, effectively communicating key findings to stakeholders.",
       "Automated data processing workflows using Python and MATLAB, increasing efficiency and reducing manual tasks.",
       "Employed VISSIM scripting for traffic data simulation and modeling, supporting transportation research with dynamic analysis.",
-      "Collaborated with research teams to understand data requirements, translating them into insightful analytical reports that informed decision-making.",
+      "Collaborated with research teams to understand data requirements, translating them into insightful analytical reports.",
     ],
-    skills: ["Problem Solving", "Microsoft Power BI", "+10 more"],
+    skills: ["Problem Solving", "Microsoft Power BI", "Tableau", "+10 more"],
     logo: "/herff-logo.png",
   },
   {
@@ -37,21 +37,25 @@ const experiences = [
     duration: "Jan 2022 - Nov 2022 · 11 mos",
     location: "Hyderabad, Telangana, India · On-site",
     responsibilities: [
-      "Created and maintained web-based dashboards using React.js, making sure they are cross-browser compatible.",
+      "Created and maintained web-based dashboards using React.js, ensuring cross-browser compatibility.",
+      "Built interactive data visualizations using D3.js and Power BI, making dashboards user-friendly.",
+      "Developed RESTful APIs using Node.js and Express.js, integrating with MongoDB for seamless data storage and retrieval.",
+      "Utilized Git for version control and participated in Agile processes like sprint planning and daily meetings.",
+      "Worked closely with developers, data analysts, and designers to add new features and improve existing ones.",
     ],
-    skills: ["JavaScript", "MongoDB", "+7 more"],
-    logo: "/images/innova-logo.png",
+    skills: ["JavaScript", "MongoDB", "D3.js", "Power BI", "+7 more"],
+    logo: "/innova-logo.png",
   },
   {
-    role: "Business Intelligence Developer",
-    company: "InnovaPath, INC. (Internship)",
+    role: "Business Intelligence Developer (Internship)",
+    company: "InnovaPath, INC.",
     duration: "Jul 2021 - Jan 2022 · 7 mos",
     location: "Hybrid",
     responsibilities: [
       "Assisted in developing analytical dashboards and performing data transformation for business intelligence needs.",
     ],
     skills: ["Data Analysis", "React.js", "SQL"],
-    logo: "/images/innova-logo.png",
+    logo: "/innova-logo.png",
   },
 ];
 
