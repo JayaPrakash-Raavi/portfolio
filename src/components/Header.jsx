@@ -44,7 +44,7 @@ function Header() {
 
         <ul className="sidebar-menu">
           <li><Link to="/" onClick={() => setMenuOpen(false)}><FaHome /> Home</Link></li>
-          <li><Link to="/about" onClick={() => setMenuOpen(false)}><FaUser /> About</Link></li>
+          {/* <li><Link to="/about" onClick={() => setMenuOpen(false)}><FaUser /> About</Link></li> */}
           <li><Link to="/resume" onClick={() => setMenuOpen(false)}><FaFileAlt /> Resume</Link></li>
           <li><Link to="/projects" onClick={() => setMenuOpen(false)}><FaProjectDiagram /> Projects</Link></li>
           <li><Link to="/services" onClick={() => setMenuOpen(false)}><FaBriefcase /> Services</Link></li>

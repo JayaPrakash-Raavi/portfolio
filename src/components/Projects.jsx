@@ -14,22 +14,15 @@ function Projects() {
       title: "Referral Management Database",
       description:
         "Designed a structured database for managing patient referrals, optimizing healthcare workflows using SQL and Python automation.",
-      link: "#",
+      link: "https://github.com/JayaPrakash-Raavi/Refferral_database",
       image: "/referral-database.png",
     },
     {
       title: "Public Transport Visualization",
       description:
         "Built an analytical dashboard for visualizing real-time transit data using D3.js and Tableau, aiding transportation research.",
-      link: "#",
-      image: "/images/public-transport.jpg",
-    },
-    {
-      title: "Business Intelligence Dashboards",
-      description:
-        "Developed dashboards using Power BI, React.js, and D3.js for business insights and data visualization.",
-      link: "#",
-      image: "/images/business-dashboard.jpg",
+      link: "https://github.com/JayaPrakash-Raavi/Public-Transport-Preference-Tennessee",
+      image: "/public-transport.png",
     },
   ];
 
