@@ -18,7 +18,7 @@ function Header() {
             <ul className="d-flex">
               <li><Link to="/">Home</Link></li>
               {/* <li><Link to="/about">About</Link></li> */}
-              <li><Link to="/resume">Resume</Link></li>
+              <li><Link to="/experience">Experience</Link></li>
               <li><Link to="/projects">Projects</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/contact">Contact</Link></li>
@@ -45,7 +45,7 @@ function Header() {
         <ul className="sidebar-menu">
           <li><Link to="/" onClick={() => setMenuOpen(false)}><FaHome /> Home</Link></li>
           {/* <li><Link to="/about" onClick={() => setMenuOpen(false)}><FaUser /> About</Link></li> */}
-          <li><Link to="/resume" onClick={() => setMenuOpen(false)}><FaFileAlt /> Resume</Link></li>
+          <li><Link to="/experience" onClick={() => setMenuOpen(false)}><FaFileAlt /> Experience</Link></li>
           <li><Link to="/projects" onClick={() => setMenuOpen(false)}><FaProjectDiagram /> Projects</Link></li>
           <li><Link to="/services" onClick={() => setMenuOpen(false)}><FaBriefcase /> Services</Link></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}><FaEnvelope /> Contact</Link></li>
