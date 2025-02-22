@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import About from "./About";
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 function Home() {
   return (
@@ -36,12 +37,13 @@ function Home() {
           />
         </div>
       </div>
+    
     </section>
 
 
    <About />
-<Experience />
-
+{/* <Experience /> */}
+<Skills />
     </div>
   );
 }
