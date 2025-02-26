@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -8,11 +9,11 @@ const Footer = () => {
       <div className="footer-container">
         {/* Navigation Links */}
         <div className="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/skills">Skills</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         {/* Social Media Links */}
