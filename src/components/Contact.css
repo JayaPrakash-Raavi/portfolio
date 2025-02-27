@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 88vh;
     background-color: #f9f9f9;
   }
   
@@ -147,6 +147,10 @@
   }
   
   @media (max-width: 768px) {
+    .contact-section {
+      height: auto;
+      padding-top: 15px;
+    }
     .contact-container {
       flex-direction: column;
       max-width: 600px;
@@ -156,10 +160,6 @@
     .contact-info {
       text-align: center;
       padding: 20px;
-    }
-  
-    .contact-form {
-      margin-top: 20px;
     }
   
     .contact-title {

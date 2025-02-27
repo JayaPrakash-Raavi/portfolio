@@ -2,12 +2,42 @@ import React from "react";
 import "./Skills.css";
 
 const skills = [
-  { category: "Programming", list: ["Python", "R", "JavaScript", "SQL/MySQL", "Node.js", "MongoDB", "React.js"] },
-  { category: "Data & Analytics", list: ["Data Analysis", "Data Visualization", "Data Science", "Big Data Analytics", "Microsoft Power BI", "DAX"] },
-  { category: "Machine Learning & AI", list: ["Deep Learning", "Convolutional Neural Networks (CNN)", "Artificial Intelligence (AI)", "Transfer Learning", "Inception V3"] },
-  { category: "Web Development", list: ["HTML5", "CSS", "Bootstrap", "Angular", "Angular Material", "Web Applications"] },
-  { category: "Software & Tools", list: ["GitHub", "GitHub Copilot", "Alteryx", "Figma", "PTV Vissim", "GIS Applications"] },
-  { category: "Soft Skills", list: ["Problem-Solving", "Collaboration", "Teaching & Mentorship", "Time Management", "Communication", "Project Management"] }
+  { 
+    category: "Programming & Scripting", 
+    list: ["Python", "SQL", "R", "JavaScript", "Shell Scripting", "Node.js", "TypeScript"] 
+  },
+  { 
+    category: "Data Engineering & Databases", 
+    list: ["MySQL", "PostgreSQL", "MongoDB", "Apache Kafka", "Spark", "Hadoop", "AWS RDS", "BigQuery"] 
+  },
+  { 
+    category: "Data Analytics & BI Tools", 
+    list: ["Power BI", "Tableau", "Looker", "Microsoft Excel (Advanced)", "DAX", "Google Data Studio", "ETL Pipelines"] 
+  },
+  { 
+    category: "Machine Learning & AI", 
+    list: ["Pandas", "Scikit-Learn", "TensorFlow", "PyTorch", "Deep Learning", "Convolutional Neural Networks (CNN)"] 
+  },
+  { 
+    category: "Data Processing & Cloud Platforms", 
+    list: ["AWS (S3, Lambda, EC2, Glue)", "GCP (BigQuery, Dataflow)", "Azure Data Factory", "Snowflake", "Databricks"] 
+  },
+  { 
+    category: "Big Data & Streaming", 
+    list: ["Apache Spark", "Kafka Streams", "Data Lakes", "Data Warehousing", "Airflow", "Delta Lake"] 
+  },
+  { 
+    category: "Web & API Development", 
+    list: ["REST APIs", "GraphQL", "Flask", "Django", "FastAPI", "Express.js", "Serverless Architecture"] 
+  },
+  { 
+    category: "Software & DevOps", 
+    list: ["GitHub", "GitLab CI/CD", "Docker", "Kubernetes", "Terraform", "Jenkins", "Linux System Administration"] 
+  },
+  { 
+    category: "Soft Skills", 
+    list: ["Problem-Solving", "Collaboration", "Agile & Scrum", "Project Management", "Teaching & Mentorship"] 
+  }
 ];
 
 const Skills = () => {
