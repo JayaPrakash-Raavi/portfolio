@@ -18,7 +18,7 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div className="footer-social">
-          <a href="https://www.linkedin.com/in/jaya-prakash-narayana-raavi" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/jayaprakashraavi/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" />
           </a>
           <a href="https://github.com/JayaPrakash-Raavi" target="_blank" rel="noopener noreferrer">
@@ -40,5 +40,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;
