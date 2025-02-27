@@ -63,7 +63,7 @@ function Contact() {
           <h2 className="contact-title">Get in Touch</h2>
           <p className="contact-description">Send me a message!</p>
           <p>📧 Email: <a href="mailto:jpn9121@gmail.com">jpn9121@gmail.com</a></p>
-          <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/jaya-prakash-narayana-raavi" target="_blank" rel="noopener noreferrer">Visit My LinkedIn</a></p>
+          <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/jayaprakashraavi/" target="_blank" rel="noopener noreferrer">Visit My LinkedIn</a></p>
           <p>💻 GitHub: <a href="https://github.com/JayaPrakash-Raavi" target="_blank" rel="noopener noreferrer">Check My Work</a></p>
         </div>
 
