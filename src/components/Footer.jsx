@@ -10,9 +10,9 @@ const Footer = () => {
         {/* Navigation Links */}
         <div className="footer-links">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/experience">Experience</Link>
           <Link to="/projects">Projects</Link>
-          <Link to="/skills">Skills</Link>
+          <a href="https://medium.com/@rjayaprakash13815" target="_blank">Blogs</a>
           <Link to="/contact">Contact</Link>
         </div>
 
