@@ -3,7 +3,7 @@ import "./Home.css";
 import About from "./About";
 import Experience from "./Experience";
 import Skills from "./Skills";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="home-container">
@@ -31,7 +31,7 @@ function Home() {
 
             <div className="buttons">
               <a href="/Resume.pdf" download className="button primary">Download Resume</a>
-              <a href="#contact" className="button secondary">Let's Connect</a>
+              <Link to="/contact" className="button secondary">Let's Connect</Link>
             </div>
           </div>
 
