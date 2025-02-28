@@ -20,7 +20,7 @@ function Header() {
               {/* <li><Link to="/about">About</Link></li> */}
               <li><Link to="/experience">Experience</Link></li>
               <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/services">Services</Link></li>
+              <li><a href="https://medium.com/@rjayaprakash13815" target="_blank">Blogs</a></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
@@ -47,7 +47,7 @@ function Header() {
           {/* <li><Link to="/about" onClick={() => setMenuOpen(false)}><FaUser /> About</Link></li> */}
           <li><Link to="/experience" onClick={() => setMenuOpen(false)}><FaFileAlt /> Experience</Link></li>
           <li><Link to="/projects" onClick={() => setMenuOpen(false)}><FaProjectDiagram /> Projects</Link></li>
-          <li><Link to="/services" onClick={() => setMenuOpen(false)}><FaBriefcase /> Services</Link></li>
+          <li><a href="https://medium.com/@rjayaprakash13815" target="_blank" onClick={() => setMenuOpen(false)}><FaBriefcase /> Blogs</a></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}><FaEnvelope /> Contact</Link></li>
         </ul>
 
